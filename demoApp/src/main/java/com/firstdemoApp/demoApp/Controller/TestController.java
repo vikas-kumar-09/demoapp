@@ -43,7 +43,7 @@ public class TestController {
         return this.courseService.getCourse(Long.parseLong(courseId));
     }
     
-    // post the course (add new course)
+    // post the course (add new course : id, title, des)
     @PostMapping("/courses")
     public Course addCourse(@RequestBody Course course){
 
